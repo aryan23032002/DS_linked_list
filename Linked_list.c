@@ -118,13 +118,14 @@ void count()
        {
 	node *temp2;
 	temp2=start;
+	int pp=0;
 		if(start==NULL)
 		{
 		printf("\nLinkedlist is Empty");
 		}
 	else
 		   {
-		   int pp=0;
+		   
 	   while(temp2!=NULL)
 		   {
 		   temp2=temp2->next;
@@ -132,6 +133,7 @@ void count()
 		   }
 		   printf("\nTotal Node %d\n",pp);
 		   }
+		   return pp;
        }
 void insert_at_specific()
 {
@@ -194,7 +196,7 @@ void del()
 	}
 
 
-/*void del_specific()
+void del_specific()
 	{
 	 int pos,i,size=0;
 	 node *temp=NULL,*ptr=NULL;
@@ -229,7 +231,7 @@ void del()
 
 				}
 		}
-	 }*/
+	 }
 
 
 
@@ -296,7 +298,7 @@ node *prev, *ptr, *next;
 	printf("\n        6. Insert At specific");
 	printf("\n        7. Delete of first");
 	printf("\n        8. Delete at last");
-//	printf("\n9. Delete Specific");
+	printf("\n        9. Delete Specific");
      //	printf("\n10. Sort");
     //	printf("\n11. Reverse");
 	printf("\n------------------------------------------");
@@ -339,9 +341,9 @@ case 8:
 	del_at_last();
 	break;
 
-/*case 9:
+case 9:
 	del_specific();
-	break; */
+	break; 
 
 //case 10:
   //	sort();
